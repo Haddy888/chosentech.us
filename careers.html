@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Careers | Chosen Technology</title>
+  <meta name="description" content="Careers at Chosen Technology: network engineering, cybersecurity, field service, and help desk roles.">
+  <link rel="canonical" href="https://chosentech.us/careers.html">
+  <link rel="icon" href="icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="chosen-design-system.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","itemListElement":[
+    {"@type":"JobPosting","title":"Network Engineer","employmentType":"FULL_TIME","hiringOrganization":{"@type":"Organization","name":"Chosen Technology"},"jobLocationType":"TELECOMMUTE","identifier":"CT-REQ-101"},
+    {"@type":"JobPosting","title":"Cybersecurity Analyst","employmentType":"FULL_TIME","hiringOrganization":{"@type":"Organization","name":"Chosen Technology"},"jobLocationType":"TELECOMMUTE","identifier":"CT-REQ-102"},
+    {"@type":"JobPosting","title":"Field Service Technician","employmentType":"FULL_TIME","hiringOrganization":{"@type":"Organization","name":"Chosen Technology"},"identifier":"CT-REQ-103"},
+    {"@type":"JobPosting","title":"IT Help Desk Specialist","employmentType":"FULL_TIME","hiringOrganization":{"@type":"Organization","name":"Chosen Technology"},"jobLocationType":"TELECOMMUTE","identifier":"CT-REQ-104"}
+  ]}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><img src="icon.png" width="40" height="40" alt=""><span class="brand-text"><strong>CHOSEN</strong><em>TECHNOLOGY</em></span></a><nav class="nav" data-nav><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></div></header>
+  <main id="main">
+    <section class="section">
+      <div class="wrap">
+        <p class="eyebrow">Careers</p>
+        <h1>Build your future with Chosen Technology</h1>
+        <p class="lead">Join a team delivering technology services across the country. Resume files are checked in the browser for PDF or DOCX and a 5 MB limit. This static preview does not upload files to S3 and does not scan them. Do not treat a submission here as received by recruiting until the webhook is connected.</p>
+        <table>
+          <thead><tr><th>Role</th><th>Type</th><th>Location</th><th>Req</th><th></th></tr></thead>
+          <tbody>
+            <tr><td>Network Engineer</td><td>Full-time</td><td>Remote / nationwide</td><td>CT-REQ-101</td><td><button class="btn btn-outline" type="button" data-apply="CT-REQ-101">Apply</button></td></tr>
+            <tr><td>Cybersecurity Analyst</td><td>Full-time</td><td>Remote / nationwide</td><td>CT-REQ-102</td><td><button class="btn btn-outline" type="button" data-apply="CT-REQ-102">Apply</button></td></tr>
+            <tr><td>Field Service Technician</td><td>Full-time</td><td>Travel required</td><td>CT-REQ-103</td><td><button class="btn btn-outline" type="button" data-apply="CT-REQ-103">Apply</button></td></tr>
+            <tr><td>IT Help Desk Specialist</td><td>Full-time</td><td>Remote</td><td>CT-REQ-104</td><td><button class="btn btn-outline" type="button" data-apply="CT-REQ-104">Apply</button></td></tr>
+          </tbody>
+        </table>
+        <p><button class="btn btn-primary" type="button" data-apply="General">Upload resume securely</button></p>
+      </div>
+    </section>
+  </main>
+  <dialog id="apply-dialog" aria-labelledby="apply-title">
+    <div class="dialog-head"><h2 id="apply-title">Apply</h2><button type="button" data-close-dialog aria-label="Close">×</button></div>
+    <form class="dialog-body form" data-apply-form>
+      <label>Full name<input name="full_name" required></label>
+      <label>Email<input name="email" type="email" required></label>
+      <label>Phone<input name="phone" type="tel" required></label>
+      <label>Position
+        <select name="target_position" required>
+          <option>CT-REQ-101 Network Engineer</option>
+          <option>CT-REQ-102 Cybersecurity Analyst</option>
+          <option>CT-REQ-103 Field Service Technician</option>
+          <option>CT-REQ-104 IT Help Desk Specialist</option>
+          <option>General</option>
+        </select>
+      </label>
+      <label>Metro area<input name="metro_area"></label>
+      <label>LinkedIn or portfolio<input name="portfolio_url" type="url"></label>
+      <label>Resume (PDF or DOCX, max 5 MB)<input name="resume" type="file" accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required></label>
+      <p data-file-note class="form-note"></p>
+      <label class="hp">Website<input name="company_website" tabindex="-1" autocomplete="off"></label>
+      <button class="btn btn-primary" type="submit">Submit application</button>
+      <p data-status class="form-note" role="status"></p>
+    </form>
+  </dialog>
+  <footer class="site-footer"><div class="wrap legal">Recruiter dashboard and malware scanning are Phase 3–5. Not included in this static release. · <a href="privacy.html">Privacy</a></div></footer>
+  <script src="chosen-site.js"></script>
+</body>
+</html>

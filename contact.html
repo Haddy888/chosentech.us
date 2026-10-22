@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Chosen Technology</title>
+  <meta name="description" content="Request a quote from Chosen Technology. Call 1 (833) 246-7363 or email info@chosentech.us. Help desk Monday–Friday, 8AM–6PM EST.">
+  <link rel="canonical" href="https://chosentech.us/contact.html">
+  <link rel="icon" href="icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="chosen-design-system.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility"><div class="utility-inner"><span>Mon–Fri 8AM–6PM EST help desk</span><span><a href="tel:+18332467363">1 (833) 246-7363</a></span></div></div>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><img src="icon.png" width="40" height="40" alt=""><span class="brand-text"><strong>CHOSEN</strong><em>TECHNOLOGY</em></span></a><nav class="nav" data-nav><a href="index.html">Home</a><a href="managed-it.html">Services</a><a href="contact.html">Contact</a></nav></div></header>
+  <main id="main">
+    <section class="section"><div class="wrap two">
+      <div>
+        <p class="eyebrow">Let’s connect</p>
+        <h1>Contact us</h1>
+        <p>Phone: <a href="tel:+18332467363">1 (833) 246-7363</a><br>Email: <a href="mailto:info@chosentech.us">info@chosentech.us</a><br>Hours: Monday–Friday, 8AM–6PM EST<br>Area: major U.S. metropolitan areas</p>
+        <p class="disclaimer">This form builds a <code>lead.created</code> JSON payload. Until <code>WEBHOOK_URL</code> is set in chosen-site.js, the preview does not send it to a CRM. Do not put a signing secret in the browser. HMAC belongs on the API in HO-05.</p>
+      </div>
+      <form class="form" data-lead-form>
+        <label>Full name<input name="full_name" required autocomplete="name"></label>
+        <label>Work email<input name="email" type="email" required autocomplete="email"></label>
+        <label>Work phone<input name="phone" type="tel" autocomplete="tel"></label>
+        <label>Company<input name="company" autocomplete="organization"></label>
+        <label>Primary service
+          <select name="service_interest" required>
+            <option value="">Select</option>
+            <option>Managed IT Services</option>
+            <option>Cybersecurity</option>
+            <option>Business Cellular &amp; MDM</option>
+            <option>Nationwide Field Services</option>
+            <option>Cloud &amp; Backup</option>
+            <option>Complete Vendor Consolidation</option>
+          </select>
+        </label>
+        <label>Endpoint or device count
+          <select name="device_tier">
+            <option value="">Select</option>
+            <option>1-50</option>
+            <option>51-250</option>
+            <option>251-500</option>
+            <option>500+</option>
+          </select>
+        </label>
+        <label>Primary metro<input name="metro_area" placeholder="Chicago"></label>
+        <label>How can we help?<textarea name="message" required></textarea></label>
+        <label><input type="checkbox" name="gartner_briefing" value="yes"> Send the short 2026 market-context notes (not a Gartner report reprint)</label>
+        <label class="hp">Company website<input name="company_website" tabindex="-1" autocomplete="off"></label>
+        <button class="btn btn-primary" type="submit">Submit request</button>
+        <p data-status class="form-note" role="status"></p>
+      </form>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap legal"><a href="privacy.html">Privacy</a> · © 2026 Chosen Technology</div></footer>
+  <script src="chosen-site.js"></script>
+</body>
+</html>
