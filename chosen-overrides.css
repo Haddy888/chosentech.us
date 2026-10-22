@@ -1,0 +1,12 @@
+/* Load after chosen-design-system.css.
+   Keeps the menu visible on pages that do not include a Menu button. */
+@media (max-width: 760px) {
+  .site-header:not(:has([data-menu])) .nav {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: transparent;
+    padding: 0;
+  }
+}
